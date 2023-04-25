@@ -90,7 +90,7 @@ let players =
          "city": "mumbai",
          "sports": [
              "soccer"
-         ]
+         ],
      },
  ]
 
@@ -102,7 +102,8 @@ let players =
     if(ans){
         res.send(players)
     }else{
-        players.push(req.body)
+        players.push(req.body) 
+        res.send(players)
     }
    // res.send(  { data: players , status: true }  )
 })
