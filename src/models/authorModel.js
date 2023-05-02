@@ -17,4 +17,4 @@ const authorSchema= new mongoose.Schema({
 
 
 
-    module.exports = mongoose.model('authordata', authorSchema) //users
+    module.exports = mongoose.model('authorpopulate', authorSchema) //users

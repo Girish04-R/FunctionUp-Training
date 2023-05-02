@@ -29,9 +29,13 @@ author_id : {
     type : Number,
     require : true
 },
+author:{
+type: mongoose.Schema.Types.ObjectId,
+ref : "authorpopulate" 
+},
 price : Number,
 rating : Number, 
 
 })
 
-module.exports = mongoose.model('Bookdata', bookSchema) //users
+module.exports = mongoose.model('bookpopulate', bookSchema) //users

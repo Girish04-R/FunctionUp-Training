@@ -16,9 +16,9 @@ router.get("/test-me", function (req, res) {
 
 router.post("/createBook", BookController.createBook  )
 router.post("/createAuthor", authorController.createAuthor)
-router.get("/listBooks",authorController.listBooks)
-router.get("/updatePrice",authorController.updatePrice)
-router.get("/booksBetweenRange",authorController.booksBetweenRange)
+// router.get("/listBooks",authorController.listBooks)
+// router.get("/updatePrice",authorController.updatePrice)
+// router.get("/booksBetweenRange",authorController.booksBetweenRange)
 // router.get("/getBooksData", BookController.getBooksData)
 
 // router.post("/updateBooks", BookController.updateBooks)
@@ -43,4 +43,8 @@ router.get("/booksBetweenRange",authorController.booksBetweenRange)
 //     res.send({ msg: "all good"})
 // })
 
+router.get('/getbooks',authorController.getbooks)
+//router.get('/bookList',authorController.bookList)
+router.get('/priceUpdate',authorController.priceUpdate)
+router.get('/bkBetRange',authorController.bkBetRange)
 module.exports = router;
