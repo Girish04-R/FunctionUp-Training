@@ -14,12 +14,12 @@ router.get("/test-me", function (req, res) {
 
 // router.get("/getUsersData", UserController.getUsersData)
 
-router.post("/createBook", BookController.createBook  )
-router.post("/createAuthor", authorController.createAuthor)
+//router.post("/createBook", BookController.createBook  )
+//router.post("/createAuthor", authorController.createAuthor)
 router.get("/listBooks",authorController.listBooks)
 router.get("/updatePrice",authorController.updatePrice)
 router.get("/booksBetweenRange",authorController.booksBetweenRange)
-// router.get("/getBooksData", BookController.getBooksData)
+//nrouter.get("/getBooksData", BookController.getBooksData)
 
 // router.post("/updateBooks", BookController.updateBooks)
 // router.post("/deleteBooks", BookController.deleteBooks)
@@ -42,5 +42,7 @@ router.get("/booksBetweenRange",authorController.booksBetweenRange)
 
 //     res.send({ msg: "all good"})
 // })
+// populate
+//router.get('/getbooks',authorController.getbooks)
 
 module.exports = router;
