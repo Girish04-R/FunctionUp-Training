@@ -45,10 +45,20 @@ router.post("/createBook", BookController.createBook  )
 // router.get('/register',  UserController.register)
 
 
+// const MidInfo=function(req,res,next){
+// var date=new Date()
+// var DateAndTime=date.getDate()+"/"+(date.getMonth()+1)+"/"+date.getFullYear()+" "+date.getHours()+":"+date.getMinutes()+":"+date.getSeconds()
+
+// console.log(DateAndTime)
+// console.log(req.ip)
+// console.log(req.route.path)
+// next()
+// }
 
 
+//router.get('/basicRoute',MidInfo,UserController.basicCode)
+//router.get("/basicRoute", commonMW.mid1, commonMW.mid2, commonMW.mid3, commonMW.mid4, UserController.basicCode)
 
-router.get("/basicRoute", commonMW.mid1, commonMW.mid2, commonMW.mid3, commonMW.mid4, UserController.basicCode)
 
 
 
